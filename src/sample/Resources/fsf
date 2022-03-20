@@ -1,0 +1,54 @@
+public class SaveArr {
+
+            static ArrayList arrName =new ArrayList();
+            static ArrayList<Double> niList = new ArrayList();
+            static ArrayList<Double> sigmaA = new ArrayList();
+            static ArrayList<Double> sigmaM = new ArrayList();
+            static ArrayList<Double> sigmaMax = new ArrayList();
+
+            public  ArrayList<Double> getNiList() {
+                return niList;
+            }
+
+            public  void setNiList(ArrayList<Double> niList) {
+                SaveArr.niList = niList;
+            }
+
+            public  ArrayList<Double> getSigmaA() {
+                return sigmaA;
+            }
+
+            public  void setSigmaA(ArrayList<Double> sigmaA) {
+                SaveArr.sigmaA = sigmaA;
+            }
+
+            public  ArrayList<Double> getSigmaM() {
+                return sigmaM;
+            }
+
+            public  void setSigmaM(ArrayList<Double> sigmaM) {
+                SaveArr.sigmaM = sigmaM;
+    }
+
+    public  ArrayList<Double> getSigmaMax() {
+        return sigmaMax;
+    }
+
+    public void setSigmaMax(ArrayList<Double> sigmaMax) {
+        SaveArr.sigmaMax = sigmaMax;
+    }
+
+
+
+    public ArrayList getArrName() {
+
+        return arrName;
+    }
+
+    public void setArrName(ArrayList arrName) {
+
+        this.arrName = arrName;
+    }
+
+
+}

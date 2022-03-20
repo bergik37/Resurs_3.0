@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<GridPane xmlns:fx="http://javafx.com/fxml/1" alignment="center" hgap="10" vgap="10"
+          xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="sample.Controller.SceneThirdController">
+    <Pane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+          prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/10.0.2-internal">
+        <children>
+            <TextField fx:id="numberObrazcov" layoutX="455.0" layoutY="131.0" prefHeight="25.0" prefWidth="57.0"/>
+            <TextField fx:id="coefficientForce" layoutX="455.0" layoutY="172.0" prefHeight="25.0" prefWidth="57.0"/>
+            <TextField fx:id="quadLog" layoutX="455.0" layoutY="208.0" prefHeight="25.0" prefWidth="57.0"/>
+            <TextField fx:id="degree" layoutX="455.0" layoutY="238.0" prefHeight="25.0" prefWidth="57.0"/>
+            <TextField fx:id="numberEkzemplyrov" layoutX="455.0" layoutY="274.0" prefHeight="25.0" prefWidth="57.0"/>
+            <ComboBox fx:id="comboBoxText" layoutX="455.0" layoutY="312.0" prefWidth="150.0"/>
+            <Button layoutX="291.0" layoutY="353.0" mnemonicParsing="false" onAction="#solve"
+                    text="Расчет коэффициента"/>
+            <Label layoutX="306.0" layoutY="135.0" text="Количество образцов n ="/>
+            <Label layoutX="164.0" layoutY="176.0" text="Коэффициент вариации нагрузок (напряжений) ζ = "/>
+            <Label layoutX="50.0" layoutY="212.0"
+                   text="Средне квадратичное отклонение логарифмов чисел до разрушени S = "/>
+            <Label layoutX="55.0" layoutY="242.0"
+                   text="Покзатель степени в степенном выражение кривой выносливости m ="/>
+            <Label layoutX="11.0" layoutY="278.0"
+                   text="Число экземпляров конструкции, подвергавшихся тензометрии в полете n_σ ="/>
+            <Label layoutX="43.0" layoutY="316.0" prefHeight="17.0" prefWidth="409.0"
+                   text="Квантиль нормального распределения соответсвующий вероятности P ="/>
+            <TextField fx:id="coefficientSafetyMargin" layoutX="456.0" layoutY="389.0"/>
+            <Label layoutX="76.0" layoutY="393.0" prefHeight="17.0" prefWidth="378.0"
+                   text="Коэффициент надежности по уровню переменных напряжений n ="/>
+        </children>
+    </Pane>
+    <columnConstraints>
+        <ColumnConstraints/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+    </rowConstraints>
+</GridPane>

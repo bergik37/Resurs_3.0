@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.Font?>
+<GridPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+          prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+          fx:controller="sample.Controller.SceneFourController294">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+    </rowConstraints>
+    <children>
+        <Pane prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <Button fx:id="push" layoutX="38.0" layoutY="213.0" mnemonicParsing="false" onAction="#solve"
+                        prefHeight="88.0" prefWidth="526.0" text="приведение к эквивалентным напряжениям"/>
+                <ComboBox fx:id="comboBoxText" layoutX="319.0" layoutY="149.0" prefHeight="25.0" prefWidth="273.0"
+                          promptText="Библиотека материалов"/>
+
+
+                <Line endX="500.0" layoutX="50.0" layoutY="525.0" startY="-0.49993896484375"/>
+                <Line endX="500.0" layoutX="50.0" layoutY="549.0" startY="6.103515625E-5"/>
+                <Line endX="500.0" layoutX="50.0" layoutY="575.0"/>
+                <Line endX="500.0" layoutX="50.0" layoutY="600.0" startY="-6.103515625E-5"/>
+                <Line endX="500.0" layoutX="50.0" layoutY="700.0"/>
+                <Line endY="225.0" layoutX="550.0" layoutY="525.0"/>
+                <Line endY="225.0" layoutX="50.0" layoutY="525.0"/>
+                <Line endY="200.0" layoutX="300.0" layoutY="550.0"/>
+                <Line endY="75.0" layoutX="175.0" layoutY="575.0"/>
+                <Line endY="75.0" layoutX="424.0" layoutY="575.0"/>
+                <Line endX="500.0" layoutX="50.0" layoutY="650.0"/>
+                <Line endX="500.0" layoutX="50.0" layoutY="750.0"/>
+                <TextField fx:id="σaGaG_ExpNew" layoutX="204.0" layoutY="613.0" prefHeight="10.0" prefWidth="70.0"/>
+                <TextField fx:id="σmGaG_ExpNew" layoutX="80.0" layoutY="613.0" prefHeight="10.0" prefWidth="70.0"/>
+                <TextField fx:id="σmVibExpNew" layoutX="323.0" layoutY="613.0" prefHeight="10.0" prefWidth="70.0"/>
+                <TextField fx:id="σaVibExpNew" layoutX="455.0" layoutY="613.0" prefHeight="10.0" prefWidth="70.0"/>
+
+                <Label layoutX="164.0" layoutY="526.0" prefHeight="21.0" prefWidth="319.0"
+                       text="Эксперементальные данные">
+                    <font>
+                        <Font name="DejaVu Sans Condensed Bold" size="18.0"/>
+                    </font>
+                </Label>
+
+
+                <TextField fx:id="cycleGaG" layoutX="123.0" layoutY="662.0" prefHeight="10.0" prefWidth="80.0"/>
+                <TextField fx:id="cycleVariable" layoutX="386.0" layoutY="662.0" prefHeight="10.0" prefWidth="80.0"/>
+                <TextField fx:id="degreeMGaG" layoutX="138.0" layoutY="715.0" prefHeight="10.0" prefWidth="50.0"/>
+                <TextField fx:id="degreeMvariable" layoutX="401.0" layoutY="715.0" prefHeight="10.0" prefWidth="50.0"/>
+                <Label layoutX="28.0" layoutY="666.0" text="N="/>
+                <Label layoutX="27.0" layoutY="719.0" text="m="/>
+
+                <Line endX="500.0" layoutX="50.0" layoutY="335.0"/>
+                <Line endX="500.0" layoutX="50.0" layoutY="360.0"/>
+                <Line endX="500.0" layoutX="50.0" layoutY="385.0"/>
+                <Line endX="500.0" layoutX="50.0" layoutY="410.0"/>
+                <Line endY="125.0" layoutX="50.0" layoutY="335.0"/>
+                <Line endY="225.0" layoutX="550.0" layoutY="3355.0"/>
+                <Line endY="125.0" layoutX="550.0" layoutY="335.0"/>
+                <Line endY="100.0" layoutX="300.0" layoutY="360.0"/>
+                <Line endY="75.0" layoutX="175.0" layoutY="385.0"/>
+                <Line endY="75.0" layoutX="425.0" layoutY="3855.0"/>
+                <Line endX="500.0" layoutX="50.0" layoutY="460.0"/>
+
+                <Label layoutX="207.0" layoutY="335.0" prefHeight="25.0" prefWidth="236.0" text="Летные данные">
+                    <font>
+                        <Font name="DejaVu Sans Condensed Bold" size="18.0"/>
+                    </font>
+                </Label>
+
+                <TextField fx:id="σmGaG_FlyNew" layoutX="80.0" layoutY="423.0" prefHeight="10.0" prefWidth="70.0"/>
+                <TextField fx:id="σaGaG_FlyNew" layoutX="204.0" layoutY="423.0" prefHeight="10.0" prefWidth="70.0"/>
+                <TextField fx:id="σmVibFlyNew" layoutX="330.0" layoutY="423.0" prefHeight="10.0" prefWidth="70.0"/>
+                <TextField fx:id="σaVibFlyNew" layoutX="450.0" layoutY="423.0" prefHeight="10.0" prefWidth="70.0"/>
+                <Label layoutX="163.0" layoutY="365.0" text="GaG"/>
+                <Label layoutX="400.0" layoutY="365.0" text="Vibration"/>
+                <Label layoutX="100.0" layoutY="390.0" text="σmGaG"/>
+                <Label layoutX="225.0" layoutY="390.0" text="σaGaG"/>
+                <Label layoutX="325.0" layoutY="390.0" text="σmVibration"/>
+                <Label layoutX="455.0" layoutY="390.0" text="σaVibration"/>
+                <Line endY="75.0" layoutX="424.0" layoutY="385.0"/>
+                <Label layoutX="329.0" layoutY="579.0" text="σmVibration"/>
+                <Label layoutX="391.0" layoutY="557.0" text="Vibration"/>
+                <Label layoutX="163.0" layoutY="557.0" text="GaG"/>
+                <Label layoutX="95.0" layoutY="579.0" text="σmGaG"/>
+                <Label layoutX="222.0" layoutY="579.0" text="σaGaG"/>
+                <Label layoutX="459.0" layoutY="579.0" text="σaVibration"/>
+                <ComboBox fx:id="flyDate" layoutX="39.0" layoutY="149.0" prefHeight="25.0" prefWidth="223.0"
+                          promptText="Данные с полетов"/>
+                <Button fx:id="refresh" layoutX="73.0" layoutY="101.0" mnemonicParsing="false" onAction="#restart"
+                        prefHeight="25.0" prefWidth="469.0" text="обновить"/>
+                <Button layoutX="47.0" layoutY="45.0" mnemonicParsing="false" onAction="#changeFly" prefHeight="25.0"
+                        prefWidth="159.0" text="Доступ к данным полета"/>
+                <Button layoutX="341.0" layoutY="45.0" mnemonicParsing="false" onAction="#changeMat" prefHeight="25.0"
+                        prefWidth="193.0" text="Доступ к библиотеке материалов"/>
+            </children>
+        </Pane>
+    </children>
+</GridPane>

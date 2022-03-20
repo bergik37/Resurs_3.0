@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="860.0" prefWidth="1099.0" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.SceneFirstController">
+    <children>
+        <Pane prefHeight="1000.0" prefWidth="1099.0" GridPane.rowIndex="1">
+            <children>
+                <Line endX="1000.0" layoutX="50.0" layoutY="25.0" />
+                <Line endX="1000.0" layoutX="50.0" layoutY="50.0" />
+                <Line endX="1000.0" layoutX="50.0" layoutY="75.0" />
+                <Line endX="1000.0" layoutX="50.0" layoutY="100.0" />
+                <Line endX="500.0" layoutX="550.0" layoutY="200.0" />
+                <Line endY="125.0" layoutX="50.0" layoutY="25.0" />
+                <Line endY="225.0" layoutX="550.0" layoutY="25.0" />
+                <Line endY="225.0" layoutX="1050.0" layoutY="25.0" />
+                <Line endY="100.0" layoutX="300.0" layoutY="50.0" />
+                <Line endY="200.0" layoutX="800.0" layoutY="50.0" />
+                <Line endY="75.0" layoutX="175.0" layoutY="75.0" />
+                <Line endY="75.0" layoutX="425.0" layoutY="75.0" />
+                <Line endY="75.0" layoutX="675.0" layoutY="75.0" />
+                <Line endY="75.0" layoutX="925.0" layoutY="75.0" />
+                <Line endX="1000.0" layoutX="50.0" layoutY="150.0" />
+                <Line endX="500.0" layoutX="550.0" layoutY="250.0" />
+                <Line endY="225.0" layoutX="550.0" layoutY="3355.0" />
+                <Line endY="75.0" layoutX="425.0" layoutY="3855.0" />
+                <Button layoutX="616.0" layoutY="444.0" mnemonicParsing="false" onAction="#solve" prefHeight="17.0" prefWidth="278.0" text="Решение">
+                    <font>
+                        <Font name="Microsoft PhagsPa" size="18.0" />
+                    </font>
+                </Button>
+                <Label layoutX="554.0" layoutY="394.0" prefHeight="17.0" prefWidth="123.0" text="Частота колебаний = " />
+                <Label layoutX="849.0" layoutY="361.0" text="Количество полетов за час =" />
+                <TextField fx:id="coefficientSafe" layoutX="680.0" layoutY="327.0" prefHeight="10.0" prefWidth="70.0" />
+                <TextField fx:id="coefficientSafeCycle" layoutX="680.0" layoutY="358.0" prefHeight="10.0" prefWidth="70.0" />
+                <TextField fx:id="frequencyVibration" layoutX="680.0" layoutY="390.0" prefHeight="10.0" prefWidth="70.0" />
+                <TextField fx:id="coefSumm" layoutX="1015.0" layoutY="327.0" prefHeight="10.0" prefWidth="70.0" />
+                <TextField fx:id="amountFlightPerHour" layoutX="1015.0" layoutY="358.0" prefHeight="10.0" prefWidth="70.0" />
+                <TextField fx:id="amountManueverPerHour" layoutX="1015.0" layoutY="390.0" prefHeight="10.0" prefWidth="70.0" />
+                <Label layoutX="418.0" layoutY="331.0" prefHeight="17.0" prefWidth="263.0" text="Коэффициент надежности по напряжениям =" />
+                <Button layoutX="493.0" layoutY="583.0" mnemonicParsing="false" onAction="#otchet" prefHeight="25.0" prefWidth="455.0" text="Создание отчета">
+                    <font>
+                        <Font name="Microsoft PhagsPa" size="18.0" />
+                    </font>
+                </Button>
+                <Label layoutX="225.0" layoutY="25.0" prefHeight="25.0" prefWidth="236.0" text="Летные данные">
+                    <font>
+                        <Font name="DejaVu Sans Condensed Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="670.0" layoutY="25.0" text="Эксперементальные данные">
+                    <font>
+                        <Font name="DejaVu Sans Condensed Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="165.0" layoutY="50.0" prefHeight="25.0" prefWidth="70.0" text="GaG">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="400.0" layoutY="50.0" prefHeight="25.0" prefWidth="70.0" text="Vibration" textOverrun="WORD_ELLIPSIS">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="665.0" layoutY="50.0" prefHeight="25.0" prefWidth="70.0" text="GaG">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="900.0" layoutY="50.0" prefHeight="25.0" prefWidth="70.0" text="Vibration">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="590.0" layoutY="75.0" prefHeight="25.0" prefWidth="70.0" text="σmGaG" />
+                <Label layoutX="330.0" layoutY="75.0" prefHeight="25.0" prefWidth="70.0" text="σmVibration" />
+                <Label layoutX="215.0" layoutY="75.0" prefHeight="25.0" prefWidth="70.0" text="σaGaG" />
+                <Label layoutX="955.0" layoutY="75.0" prefHeight="25.0" prefWidth="70.0" text="σaVibration" />
+                <Label layoutX="90.0" layoutY="75.0" prefHeight="25.0" prefWidth="70.0" text="σmGaG" />
+                <Label layoutX="825.0" layoutY="75.0" prefHeight="25.0" prefWidth="70.0" text="σmVibration" />
+                <Label layoutX="455.0" layoutY="75.0" prefHeight="25.0" prefWidth="70.0" text="σaVibration" />
+                <Label layoutX="720.0" layoutY="75.0" prefHeight="25.0" prefWidth="70.0" text="σaGaG" />
+                <TextField fx:id="σmGaG_Fly" layoutX="80.0" layoutY="113.0" prefHeight="10.0" prefWidth="70.0" />
+                <TextField fx:id="σaGaG_Fly" layoutX="205.0" layoutY="113.0" prefHeight="10.0" prefWidth="70.0" />
+                <TextField fx:id="σmVibFly" layoutX="330.0" layoutY="113.0" prefHeight="10.0" prefWidth="70.0" />
+                <TextField fx:id="σaVibFly" layoutX="455.0" layoutY="113.0" prefHeight="10.0" prefWidth="70.0" />
+                <TextField fx:id="σmGaG_Exp" layoutX="580.0" layoutY="113.0" prefHeight="10.0" prefWidth="70.0" />
+                <TextField fx:id="σaGaG_Exp" layoutX="705.0" layoutY="113.0" prefHeight="10.0" prefWidth="70.0" />
+                <TextField fx:id="σmVibExp" layoutX="830.0" layoutY="113.0" prefHeight="10.0" prefWidth="70.0" />
+                <TextField fx:id="σaVibExp" layoutX="955.0" layoutY="113.0" prefHeight="10.0" prefWidth="70.0" />
+                <TextField fx:id="cycleGaG" layoutX="635.0" layoutY="164.0" prefHeight="10.0" prefWidth="80.0" />
+                <TextField fx:id="cycleVariable" layoutX="890.0" layoutY="164.0" prefHeight="10.0" prefWidth="80.0" />
+                <TextField fx:id="degreeMGaG" layoutX="635.0" layoutY="210.0" prefHeight="10.0" prefWidth="50.0" />
+                <TextField fx:id="degreeMvariable" layoutX="890.0" layoutY="210.0" prefHeight="10.0" prefWidth="50.0" />
+                <Label layoutX="447.0" layoutY="361.0" prefHeight="17.0" prefWidth="236.0" text="Коэффициент надежности по циклам   =" />
+                <Label layoutX="516.0" layoutY="168.0" text="N=" />
+                <Label layoutX="516.0" layoutY="214.0" text="m=" />
+                <TextField fx:id="fatigueFly" layoutX="600.0" layoutY="532.0" prefHeight="10.0" prefWidth="70.0" />
+                <TextField fx:id="fatigueHour" layoutX="780.0" layoutY="530.0" prefHeight="10.0" prefWidth="70.0" />
+                <Label layoutX="770.0" layoutY="331.0" text="Коэффициент на гипотезу суммирования = " />
+                <Label layoutX="579.0" layoutY="499.0" text="Ресурс в полетах" />
+                <Label layoutX="775.0" layoutY="499.0" text="Ресурс в часах" />
+                <Button layoutX="104.0" layoutY="210.0" mnemonicParsing="false" onAction="#print" prefHeight="17.0" prefWidth="263.0" text="Построение графика" />
+                <Pane fx:id="paneGraphicsFirst" layoutX="35.0" layoutY="507.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="290.0" prefWidth="400.0" />
+                <Label layoutX="840.0" layoutY="394.0" text="Количество маневров за час = " />
+                <LineChart fx:id="linechart1" layoutX="25.0" layoutY="249.0" prefHeight="290.0" prefWidth="400.0">
+                    <xAxis>
+                        <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis side="LEFT" />
+                    </yAxis>
+                </LineChart>
+
+
+            </children>
+        </Pane>
+        <MenuBar>
+            <menus>
+
+                <Menu mnemonicParsing="false" text="Файл">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#close" text="Закрыть" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Настройки">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Удаление" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Помощь">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="89055756081" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Расчет коэффициента безопасности">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#appearThreeScene" text="Открыть" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Данные с полетов">
+                    <items>
+                        <MenuItem fx:id="menuFly" mnemonicParsing="false" onAction="#appearFourScene_294" text="Открыть" />
+                    </items>
+                </Menu>
+            <Menu mnemonicParsing="false" text="LogFile">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#logFile" text="open" />
+              </items>
+            </Menu>
+            </menus>
+        </MenuBar>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>
